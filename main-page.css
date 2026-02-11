@@ -1,0 +1,231 @@
+html {
+    overflow: scroll; 
+}
+
+h1 {
+    margin: 12px;
+}
+
+/*
+----------------
+--   HEADER   --
+----------------
+*/
+
+header {
+    color: var(--background);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color: var(--primary);
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    
+    padding: 10px 0 10px 0;
+    
+    margin: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    padding: 0 1em 0 1em;
+}
+
+.header-direita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1em 0 1em;
+    
+}
+
+.header-direita > nav * {
+    padding: 0 10px 0 10px;
+}
+
+/* ----- FIM HEADER ----- */
+
+/*
+----------------
+--    MAIN    --
+----------------
+*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:stretch;
+
+    padding: 0;
+    margin: 50px 18px 0 18px;
+}
+
+main > div {
+    /* border: 2px solid greenyellow; */
+    margin: 80px 0 80px 0;
+}
+
+button {
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 2px;
+}
+
+/* ----- SEÇÃO 1: INTRO ----- */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 30vh;
+    background-image: linear-gradient(0deg, var(--background), var(--primary), var(--background));
+    
+    position: absolute;
+    z-index: -1;
+}
+
+.home > img {
+    width: 400px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    
+    margin: 40px;
+}
+
+.home > p {
+    margin: 20px;
+}
+
+/* ----- SEÇÃO 2: SOBRE ----- */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre > div > img {
+    width: 400px;
+    aspect-ratio: 1/1;
+    
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.txt_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    min-width: 20px;
+    width: 400px;
+    
+    padding: 20px;
+    margin: 20px;
+
+    border: 2px solid var(--offwhite);
+    border-radius: 8px;
+    font-size: large;
+}
+
+/* ----- SEÇÃO 3: PROJETOS ----- */
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ----- SEÇÃO 4: CONTATOS ----- */
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;    
+}
+
+
+
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.links > div {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.links > div > span > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-weight: bold;
+
+    height: 50px;
+
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0 5px 0 5px;
+    overflow: hidden;
+}
+
+
+.icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* ----- FIM DA MAIN ----- */
+
+
+/*
+----------------
+--   FOOTER   --
+----------------
+*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background-color: var(--primary);
+    
+    padding: 50px 0 50px 0;
+    margin: 0;
+}
+
+footer * {
+    color: var(--background);
+
+}

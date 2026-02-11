@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne+Mono&display=swap');
+
+:root {
+    color-scheme: light;
+    --text: #03020d;
+    --background: #f4f4fd;
+    --primary: #4338de;
+    --secondary: #c37fea;
+    --accent: #d058e3;
+
+    
+    --offwhite: #E1F2FE;
+}
+
+:root {
+    color-scheme: dark;
+    --text: #d7ebf9;
+    --background: #05121e;
+    --primary: #8cc6ee;
+    --secondary: #381799;
+    --accent: #994de4;
+
+    --offwhite: #E1F2FE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+html {
+    font-family: Raleway;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    width: 100vw;
+    min-width: 450px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
