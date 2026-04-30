@@ -27,6 +27,10 @@
     overflow: hidden;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     font-family: "Poppins", sans-serif;
 }
