@@ -6,8 +6,10 @@
     --text: #03020d;
     --background: #f4f4fd;
     --primary: #4338de;
+    --primary-50: #4338de80;
     --secondary: #c37fea;
     --accent: #d058e3;
+    --accent-50: #d058e380;
     --offwhite: #E1F2FE;
 }
 
@@ -16,22 +18,17 @@
     --text: #d7ebf9;
     --background: #05121e;
     --primary: #8cc6ee;
+    --primary-50: #8cc7ee80;
     --secondary: #381799;
     --accent: #994de4;
+    --accent-50: #994de480;
     --offwhite: #E1F2FE;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
-
-html {
+    padding: 0;
+    margin: 0;
     font-family: "Poppins", sans-serif;
 }
 
