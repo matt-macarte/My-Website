@@ -30,6 +30,7 @@
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    color: var(--text);
 }
 
 h1, h2, h3 {
@@ -39,9 +40,8 @@ h1, h2, h3 {
 
 body {
     background-color: var(--background);
-    color: var(--text);
-    width: 100vw;
-    min-width: 450px;
+    width: 100%;
+    min-height: 100%;
 }
 
 

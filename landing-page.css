@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 html {
     overflow: scroll; 
 }
@@ -29,13 +28,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
-    /* padding: 80px; */
+    gap: 280px;
+    padding: 180px 0 280px 0;
 }
 
 main > section {
     border: 2px solid rgba(47, 213, 255, 0.563);
-    /* margin: 80px 0px 80px 0; */
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -46,50 +44,57 @@ main > section {
 
 #hero-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+
     /* border: 1px solid red; */
 }
 
 
-#hero-section > #title {
+#title {
     font-size: 4rem;
+    font-weight: bold;
+}
+
+#hero-section p {
+    font-style: italic;
+    filter: drop-shadow(0 0 4px var(--accent-50));
+    color: var(--primary);
+}
+
+#hero-section > img {
+    width: 250px;
+    height: 300px;
 }
 
 /* ----- SEÇÃO 2: SOBRE ----- */
 
-
+#about {
+    display: flex;
+    gap: 40px;
+}
 
 #about > div {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
 }
 
 #about > div > img {
-    width: 400px;
-    aspect-ratio: 1/1;
-    
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(-45deg,var(--primary), var(--accent), var(--secondary));
     border-radius: 12px;
-    margin: 20px;
 }
 
-.txt_sobre {
+#about_text {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-
-    min-width: 20px;
+    justify-items: baseline;
+    text-align: justify;
     width: 400px;
-    
-    padding: 20px;
-    margin: 20px;
-
-    border: 2px solid var(--offwhite);
-    border-radius: 8px;
-    font-size: large;
 }
 
 /* ----- SEÇÃO 3: PROJETOS ----- */
@@ -127,7 +132,7 @@ main > section {
     filter: drop-shadow(0 0 4px var(--accent));
 }
 
-a > p{
+a > p {
     font-style: italic;
 }
 
@@ -149,6 +154,7 @@ a > p{
 
 footer {
     display: flex;
+
     align-items: center;
     justify-content: space-evenly;
     
