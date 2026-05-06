@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root {
@@ -15,27 +15,57 @@
 
 :root {
     color-scheme: dark;
-    --text: #d7ebf9;
+    
+    --bg-home: #020014;
+    --bg-about: #140000;
+    --bg-projects: #000603;
+    --bg-contacts: #0F0014;
+    --bg-footer: #03000D;
+
+    --bg-linear-grad: linear-gradient(180deg, sec-home-bg0 0%, var(--sec-about-bg0, #140000) 38.22%, var(--sec-projects-bg0, #000603) 71.82%, var(--sec-contacts-bg0, #0F0014) 95.29%);
+
+    --accent-red: #FF0105;
+    --accent-yellow: #FFBB01;
+    --accent-green: #23E34C;
+    --accent-blue: #018DFF;
+    --accent-violet: #4101FF;
+    --accent-purple: #78029F;
+
+    --white: #ffffff;
+    
+    --text-home: #FFEBFC;
+    --text-about: #FFEBEB;
+    --text-projects: #EFFFEB;
+    --text-contacts: #E5D8FF;
+    --text-footer: #FFF2F2;
+
     --background: #05121e;
+    
     --primary: #8cc6ee;
     --primary-50: #8cc7ee80;
     --secondary: #381799;
-    --accent: #994de4;
-    --accent-50: #994de480;
-    --offwhite: #E1F2FE;
+
+    --offwhite: #feefe1;
+    
 }
+
+:root {
+    --title-font: "Raleway", sans-serif;
+    --text-font: "Marcellus", serif;
+    --accent-font: "Marcellus SC", serif;
+}
+
 
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    color: var(--text);
+    font-family: var(--text-font);
+    color: var(--white);
 }
 
 h1, h2, h3 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 380;
+    font-family: var(--title-font);
 }
 
 body {
@@ -46,6 +76,6 @@ body {
 
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
 }
