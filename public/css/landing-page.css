@@ -8,6 +8,20 @@ h1 {
     font-size: 4rem;
 }
 
+p {
+    font-size: 1.5rem;
+}
+
+button {
+    font: var(--accent-font);
+    font-size: 1.5rem;
+    color: var(--offwhite);
+
+    padding: 2%;
+    border: 0;
+    background: none;
+}
+
 
 /*
 ----------------
@@ -40,25 +54,35 @@ main > section {
     flex-direction: row;
     justify-content: space-around;
     width: 80%;
-
     /* border: 1px solid red; */
 }
 
+#hero-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
 
-#title {
-    font-size: 4rem;
+#intro-text > h1 {
+    font-size: 7rem;
     font-weight: bold;
 }
 
-#hero-section p {
-    font-style: italic;
+#intro-text > p {
     filter: drop-shadow(0 0 4px var(--accent-50));
     color: var(--primary);
 }
 
-#hero-section > img {
-    width: 250px;
-    height: 300px;
+#call-to-action {
+    display: flex;
+    gap: 2%;
+}
+#call-to-action > button {
+    padding-left: 0%;
+}
+
+#hero-section img {
+    width: 36%;
 }
 
 /* ----- SEÇÃO 2: SOBRE ----- */
