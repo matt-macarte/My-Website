@@ -8,9 +8,6 @@ h1 {
     font-size: 4rem;
 }
 
-/* p {
-    font-size: 1.5rem;
-} */
 
 button {
     font: var(--accent-font);
@@ -25,25 +22,38 @@ button {
 /* ---------colors----------- */
 
 body {
-    /* background-image: var(--bg-linear-grad); */
-    background-color: blueviolet;
+    background-image: var(--bg-linear-grad);
 }
 
 #hero-section {
     background-image: linear-gradient(var(--bg-home) 80%, var(--bg-about));
 }
+#hero-section * {
+    color: var(--text-home);
+}
 #about {
     /* background-image: linear-gradient(#ffffff, #ffddff00); */
     background-image: linear-gradient(var(--bg-about) 80%, var(--bg-projects));
 }
+#about * {
+    color: var(--text-about);
+}
 #projects {
     background-image: linear-gradient(var(--bg-projects), var(--bg-projects));
+}
+#projects * {
+    color: var(--text-projects);
 }
 #contacts {
     background-image: linear-gradient(var(--bg-projects), var(--bg-contacts) 80%);
 }
+#contacts * {
+    color: var(--text-contacts);
+}
 
-
+#github img {
+    filter: brightness(100);
+}
 
 /*
 ----------------
@@ -62,7 +72,7 @@ main {
 }
 
 main > section {
-    border: 2px solid rgba(47, 213, 255, 0.563);
+    /* border: 2px solid rgba(47, 213, 255, 0.563); */
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -77,22 +87,30 @@ main > section {
 /* ----- SEÇÃO 1: INTRO ----- */
 
 #hero-section {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    
+    gap: 5%;   
 }
 
-#hero-section > div {
+#hero-section .content {
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 10%;
+    width: fit-content;
 }
 
 #hero-section .title {
     /* font-size: 7rem; */
-    width: 100%;
-    font-width: inherit;
+    width: fit-content;
+    /* font-width: inherit; */
     font-weight: bold;
+    text-wrap: nowrap;
 }
 
 #intro-text {
@@ -100,22 +118,48 @@ main > section {
     flex-direction: column;
 }
 
-#intro-text > p {
-    filter: drop-shadow(0 0 4px var(--accent-50));
+#intro-text p {
+    /* filter: drop-shadow(0 0 4px var(--accent-50)); */
     color: var(--primary);
 }
 
 #call-to-action {
     display: flex;
-    gap: 2%;
+    gap: 5%;
+    align-items: center;
 }
-#call-to-action > button {
-    padding-left: 0%;
+#call-to-action button {
+    padding: 5%;
+    padding-left: 0;
+    text-wrap-mode: nowrap;
+    font-weight: 600;
 }
 
 #hero-section img {
-    width: 36%;
+    /* width: clamp(200px, 35%, 50%); */
+    width: 100%;
     height: min-content;
+}
+
+#hero-section .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    /* height: inherit; */
+    /* width: 40%; */
+    min-width: 250px;
+    width: fit-content;
+    max-width: 400px;
+    
+    /* border: 1px solid red; */
+}
+
+#hero-section #name {
+    font-style: italic;
+    color: var(--primary-50);
+    width: max-content;
 }
 
 /* ----- SEÇÃO 2: SOBRE ----- */
@@ -125,6 +169,10 @@ main > section {
     flex-direction: column;
     align-items: center;
     gap: 10%;
+}
+
+#about .title {
+    text-align: center;
 }
 
 #about .content {
@@ -147,7 +195,7 @@ main > section {
     flex-direction: column;
     justify-items: baseline;
     text-align: justify;
-    max-width: 45ch;
+    max-width: 32ch;
 }
 
 /* ----- SEÇÃO 3: PROJETOS ----- */
@@ -215,6 +263,10 @@ main > section {
     padding: 5px;
 }
 
+#column2 a {
+    cursor: default;
+}
+
 /* ----- FIM DA MAIN ----- */
 
 
@@ -251,24 +303,34 @@ footer #disclaimer {
 
 /* ------ MOBILE ----------- */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:830px) {
+    #hero-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:720px) {
     #hero-section{
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         gap: 10%;
     }
     #hero-section img {
         width: 80%;
     }
-    #hero-section > div {
+    #hero-section .title {
+        text-wrap: wrap;
+    }
+    #hero-section .content {
         gap: 40px;
     }
     #intro-text {
         align-items: center;
     }
     #call-to-action {
-        justify-content: space-between;
+        justify-content: space-around;
     }
+
 
 
     #about .content {
@@ -278,6 +340,7 @@ footer #disclaimer {
     #about .content img {
         width: 80%;
     }
+
 
     #contacts {
         gap: 50px;
@@ -297,4 +360,12 @@ footer #disclaimer {
         flex-direction: column-reverse;
         gap:50px;
     }
+}
+
+
+@media screen and (max-width:510px) {
+    #hero-section .title {
+        text-align: center;
+    }
+
 }

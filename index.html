@@ -3,28 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matheus AC</title>
-    <link rel="icon" href="/public/assets/person-circle.svg" />
+    <title>MAC's Website</title>
+    <link rel="icon" href="/public/assets/waving_hand_icon.svg" />
     <link href="style.css" rel="stylesheet" />
     <link href="/public/css/landing-page.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header></header>
     <main>
       <section id="hero-section">
-        <div>
+        <div class="content">
           <div id="intro-text">
             <h1 class="title">Mac's Website</h1>
             <p>Bem-vind@ à minha landing-page</p>
           </div>
           <div id="call-to-action">
-            <button>Sobre mim</button>
-            <button>Projetos</button>
-            <button>Contato</button>
+            <a href="#about">
+              <button>Sobre mim</button>
+            </a>
+            <a href="#projects">
+              <button>Projetos</button>
+            </a>
+            <a href="#contacts">
+              <button>Contato</button>
+            </a>
           </div>
         </div>
-        <img src="/public/assets/me_prom1.webp" alt="Foto Matheus 1" />
+        <div class="photo">
+          <img src="/public/assets/me_prom1.webp" alt="Foto Matheus 1" />
+          <p id="name">Matheus de Almeida Campos</p>
+        </div>
       </section>
 
       <section id="about">
@@ -45,7 +53,11 @@
               Sou um eterno aprendiz, aspirando por tornar-me um mestre.
             </p>
           </div>
-          <img src="/public/assets/me_prom2.webp" alt="Foto Matheus 2" />
+          <img
+            src="/public/assets/me_prom2.webp"
+            alt="Foto 2 Matheus"
+            title="Matheus de Almeida Campos"
+          />
         </div>
       </section>
 
@@ -62,35 +74,42 @@
         <h1>Contatos</h1>
         <div id="links">
           <div id="column1">
-
             <a href="https://github.com/matt-macarte" id="github">
               <img src="/public/assets/favicon-github.svg" class="icon" />
               <p>matt-macarte</p>
             </a>
-            
+
             <a
-            href="https://www.linkedin.com/in/matheus-de-almeida-campos-527b73315/" id="linkedin"
+              href="https://www.linkedin.com/in/matheus-de-almeida-campos-527b73315/"
+              id="linkedin"
             >
-            <img src="/public/assets/favicon-linkedin.svg" class="icon" />
-            <p>Matheus de Almeida Campos</p>
-          </a>
+              <img src="/public/assets/favicon-linkedin.svg" class="icon" />
+              <p>Matheus de Almeida Campos</p>
+            </a>
+          </div>
+          <div id="column2">
+            <a id="gmail">
+              <img src="/public/assets/Gmail_icon.webp" class="icon" />
+              <p>matt.almeidac@gmail.com</p>
+            </a>
+
+            <a id="location">
+              <img
+                src="/public/assets/location-direction-gps.svg"
+                class="icon"
+              />
+              <p>Juiz de Fora - MG - Brasil</p>
+            </a>
+          </div>
         </div>
-        <div id="column2">
-          <a id="gmail">
-            <img src="/public/assets/Gmail_icon.webp" class="icon" />
-            <p>matt.almeidac@gmail.com</p>
-          </a>
-          
-          <a id="location">
-            <img src="/public/assets/location-direction-gps.svg" class="icon" />
-            <p>Juiz de Fora - MG - Brasil</p>
-          </a>
-        </div>
-      </div>
       </section>
     </main>
     <footer>
-      <a target="_blank" href="https://github.com/matt-macarte/My-Website" id="repo">
+      <a
+        target="_blank"
+        href="https://github.com/matt-macarte/My-Website"
+        id="repo"
+      >
         <p>Repositório Git</p>
       </a>
       <p id="disclaimer">Site produzido sem qualquer uso de IA</p>

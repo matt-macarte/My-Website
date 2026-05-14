@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Marcellus&family=Marcellus+SC&display=swap');
 
-:root {
+/* :root {
     color-scheme: light;
     --text: #03020d;
     --background: #f4f4fd;
@@ -10,10 +10,10 @@
     --accent: #d058e3;
     --accent-50: #d058e380;
     --offwhite: #E1F2FE;
-}
+} */
 
 :root {
-    color-scheme: dark;
+    /* color-scheme: dark; */
     
     --bg-home: #020014;
     --bg-about: #140000;
@@ -44,6 +44,7 @@
     --primary: #8cc6ee;
     --primary-50: #8cc7ee80;
     --secondary: #381799;
+    --secondary-50: #38179980;
 
     --offwhite: #feefe1;
     
@@ -75,8 +76,14 @@ body {
     min-height: 100%;
 }
 
+button:hover {
+    cursor: pointer;
+}
 
 a {
     text-decoration: none;
     color: inherit;
+}
+a:hover {
+    cursor: pointer;
 }
