@@ -313,7 +313,7 @@ footer #disclaimer {
     #hero-section{
         /* flex-direction: column; */
         align-items: center;
-        gap: 10%;
+        gap: 32px;
     }
     #hero-section img {
         width: 80%;
@@ -332,7 +332,9 @@ footer #disclaimer {
     }
 
 
-
+    #about {
+        gap: 38px;
+    }
     #about .content {
         flex-direction: column;
         align-items: center;
