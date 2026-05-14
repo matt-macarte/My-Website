@@ -21,7 +21,8 @@
     --bg-contacts: #0F0014;
     --bg-footer: #03000D;
 
-    --bg-linear-grad: linear-gradient(180deg, sec-home-bg0 0%, var(--sec-about-bg0, #140000) 38.22%, var(--sec-projects-bg0, #000603) 71.82%, var(--sec-contacts-bg0, #0F0014) 95.29%);
+    /* --bg-linear-grad: linear-gradient(180deg, var(--bg-home) 0%, var(--bg-about) 38.22%, var(--bg-projects) 71.82%, var(--bg-contacts) 95.29%); */
+    /* --bg-linear-grad: linear-gradient(180deg, var(--bg-home), var(--bg-about), var(--bg-projects), var(--bg-contacts)); */
 
     --accent-red: #FF0105;
     --accent-yellow: #FFBB01;
