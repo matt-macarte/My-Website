@@ -8,13 +8,13 @@ h1 {
     font-size: 4rem;
 }
 
-p {
+/* p {
     font-size: 1.5rem;
-}
+} */
 
 button {
     font: var(--accent-font);
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     color: var(--offwhite);
 
     padding: 2%;
@@ -36,7 +36,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     gap: 280px;
-    padding: 180px 0 280px 0;
+    padding: 180px 10% 280px 10%;
 }
 
 main > section {
@@ -53,19 +53,26 @@ main > section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     /* border: 1px solid red; */
 }
 
 #hero-section > div {
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 10%;
 }
 
-#intro-text > h1 {
-    font-size: 7rem;
+#hero-section .title {
+    /* font-size: 7rem; */
+    width: 100%;
+    font-width: inherit;
     font-weight: bold;
+}
+
+#intro-text {
+    display: flex;
+    flex-direction: column;
 }
 
 #intro-text > p {
@@ -83,35 +90,40 @@ main > section {
 
 #hero-section img {
     width: 36%;
+    height: min-content;
 }
 
 /* ----- SEÇÃO 2: SOBRE ----- */
 
 #about {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
 }
 
-#about > div {
+#about .content {
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    gap: 80px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
 }
 
-#about > div > img {
+#about .content img {
     width: 300px;
-    height: 400px;
-    background-image: linear-gradient(-45deg,var(--primary), var(--accent), var(--secondary));
+    height: max-content;
+    /* background-image: linear-gradient(-45deg,var(--primary), var(--accent), var(--secondary)); */
     border-radius: 12px;
 }
 
-#about_text {
+#about .text {
     display: flex;
     flex-direction: column;
     justify-items: baseline;
     text-align: justify;
-    width: 400px;
+    max-width: 45ch;
 }
 
 /* ----- SEÇÃO 3: PROJETOS ----- */
@@ -121,7 +133,20 @@ main > section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 80px;
+
+    width: 100%;
+}
+
+#projects .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-description {
+    color: var(--primary-50);
+    font-style: italic;
 }
 
 /* ----- SEÇÃO 4: CONTATOS ----- */
@@ -130,23 +155,32 @@ main > section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 120px;
+    gap: 180px;
     width: 100%;
 }
 
 #links {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 4%;
 }
 
-#links > a {
+#links div {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#links a {
+    display: flex;
+    width: fit-content;
+    /* flex-wrap: wrap; */
     align-items: center;
-    filter: drop-shadow(0 0 4px var(--accent));
+    /* filter: drop-shadow(0 0 4px var(--accent)); */
 }
 
 a > p {
@@ -184,4 +218,50 @@ footer {
 footer > * {
     color: var(--background);
 
+}
+
+
+/* ------ MOBILE ----------- */
+
+@media screen and (max-width:800px) {
+    #hero-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+    }
+    #hero-section img {
+        width: 80%;
+    }
+    #hero-section > div {
+        gap: 40px;
+    }
+    #intro-text {
+        align-items: center;
+    }
+    #call-to-action {
+        justify-content: space-between;
+    }
+
+
+    #about .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .content img {
+        width: 80%;
+    }
+
+    #contacts {
+        width: fit-content;
+        gap: 50px;
+    }
+    #links {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 30px;
+    }
+    #links div {
+        /* align-items: center; */
+        gap: 30px;
+    }
 }
