@@ -1,0 +1,17 @@
+:root {
+    --background: #010104;
+    --dark-purple: #2E084A;
+}
+
+header, footer {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    background: linear-gradient(180deg, transparent, var(--dark-purple));
+}
+
+
+body {
+    background: var(--background);
+}
